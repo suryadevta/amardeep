@@ -1,0 +1,33 @@
+[
+    {
+      "name": "gravystack-Prod",
+      "image": "710866754724.dkr.ecr.us-east-1.amazonaws.com/poc-1:latest",
+      "memory": 450,
+      "essential": true,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/gravystack-Prod",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "name": "CONFIG_ENCRYPTION_KEY",
+          "value": "1d01cbb943e5d20ef0bb612ab11977596c1ab50baf1573b4acac1075dae74f31"
+        },
+        {
+          "name": "NODE_ENV",
+          "value": "production"
+        }
+      ] 
+    }
+  ]
+
