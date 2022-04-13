@@ -21,7 +21,7 @@
       "environment": [
         {
           "name": "CONFIG_ENCRYPTION_KEY",
-          "value": "1d01cbb943e5d20ef0bb612ab11977596c1ab50baf1573b4acac1075dae74f31"
+          "value": ""
         },
         {
           "name": "NODE_ENV",
